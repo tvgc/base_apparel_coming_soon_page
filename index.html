@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="assets/styles/css/style.css">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
@@ -15,19 +17,51 @@
   </style>
 </head>
 <body>
+  <main>
+    <section>
+      <div class="header-block container">
+        <div class="header__logo">
+          <span class="header__logo-circle">
+            <span></span>
+          </span>
+          <div class="header__logo-name">Base <br> Apparel</div>
+        </div>
+      </div>
 
-  We're coming soon
+      <div class="image-block">
+        <img class="mobile-img" src="assets/styles/images/hero-mobile.jpg" alt="">
+        <img class="desktop-img" src="assets/styles/images/hero-desktop.jpg" alt="">
+      </div>      
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+      <div class="text-block container">       
+        <div class="body">
+          <h1 class="title title--first">We're <br> <span class="title--second">coming soon</span></h1>
+          <p class="desc">
+            Hello fellow shoppers! We're currently building our new fashion store. 
+            Add your email below to stay up-to-date with announcements and our launch deals.
+          </p>
+          <form action="">
+            <label for="email"></label>
+              <div class="input-container">
+                <input class="input-email" type="email" name="Email Address" id="" placeholder="Email Address">
+                <img class="error-img" src="assets/styles/images/icon-error.svg" alt="">
+                <button class="arrow-btn" type="submit">
+                  <img src="assets/styles/images/icon-arrow.svg" alt="">
+                </button>
+              </div>
+          </form>
+          <small class="error-msg">Please provide a valid email</small>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Thales Carvalho</a>.
+      </p>
+    </footer>
+  </main>
 
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
