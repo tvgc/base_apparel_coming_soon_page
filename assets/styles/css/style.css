@@ -281,7 +281,28 @@ footer {
         height: 100%;
     }
 
+    .text-block {
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .title--first,
+    .desc {
+        text-align: start;
+    }
+
+    .title--first {
+        margin-bottom: 3.2rem;
+    }
+
+    .desc {
+        margin-bottom: 4rem;
+    }
+
     footer {
         max-width: 144rem;
     }
 }
+
+/*falta ainda, editar o readmi, acertar o design para desktop, como o alinhamento do título e paragrafo*/
